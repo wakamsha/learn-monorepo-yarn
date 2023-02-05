@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@learn-storybook2/core/*": ["../core/src/*"],
+    }
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "../core/src/*.d.ts"]
+}

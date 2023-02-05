@@ -1,0 +1,19 @@
+{
+  "ignorePaths": ["**/node_modules/**"],
+  "words": [
+    "linaria",
+    "pnpm",
+    "stylelint",
+    "wakamsha",
+    "Segoe",
+    "Roboto",
+    "Cantarell",
+    "Fira",
+    "Neue",
+    "Menlo",
+    "Lucida",
+    "palt",
+    "plusplus",
+    "Bitstream"
+  ]
+}
