@@ -3,8 +3,21 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@learn-storybook2/core/*": ["../core/src/*"],
-    }
+      "@learn-storybook2/core/*": ["../core/src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve"
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx", "../core/src/*.d.ts"]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", ".next/types/**/*.ts", "../core/src/*.d.ts"],
+  "exclude": ["node_modules"]
 }

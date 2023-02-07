@@ -89,7 +89,7 @@ module.exports = {
         paths: [
           {
             name: 'styled-jsx/css',
-            message: '代わりに `@linaria/css` をお使いください。',
+            message: '代わりに CSS Modules ( Sass ) をお使いください。',
           },
         ],
       },
@@ -166,11 +166,9 @@ module.exports = {
       },
     },
     {
-      files: ['./**/vite.config.ts'],
+      files: ['./**/*.page.tsx'],
       rules: {
-        'no-underscore-dangle': ['off'],
         'import/no-default-export': ['off'],
-        'import/no-relative-packages': ['off'], // サブパッケージを越境した import を指摘するため無効化する。
       },
     },
     {

@@ -3,24 +3,21 @@
   "version": "1.0.0",
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "develop": "vite serve",
     "type-check": "run -T tsc --noEmit",
-    "start": "run -T run-p \"type-check --watch\" \"develop\""
+    "reset": "rm -rf ./.next && rm -rf ./out",
+    "dev": "next dev",
+    "start": "reset && run -T run-p \"type-check --watch\" \"dev\"",
+    "build": "reset && next build && next export"
   },
   "dependencies": {
     "@learn-storybook2/core": "1.0.0",
+    "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "7.18.6",
-    "@linaria/rollup": "4.3.2",
     "@types/node": "18.11.19",
     "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "@vitejs/plugin-react": "3.1.0",
-    "babel-loader": "9.1.2",
-    "babel-plugin-module-resolver": "5.0.0",
-    "vite": "4.1.1"
+    "@types/react-dom": "18.0.10"
   }
 }

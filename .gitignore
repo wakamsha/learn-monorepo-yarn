@@ -66,6 +66,7 @@ typings/
 
 # next.js build output
 .next
+**/out/
 
 # Visual Studio Code
 .vscode/*
@@ -79,3 +80,7 @@ Stories.ts
 
 # typed-scss-modules
 *.scss.d.ts
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts

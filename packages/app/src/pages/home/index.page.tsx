@@ -1,27 +1,22 @@
 import { FormLabel } from '@learn-storybook2/core/components/inputs/FormLabel';
 import { LabeledSlider } from '@learn-storybook2/core/components/inputs/LabeledSlider';
 import { useDebouncedState } from '@learn-storybook2/core/hooks/useDebouncedState';
-import { applyGlobalStyle, applyResetStyle } from '@learn-storybook2/core/utils/Style';
-import { StrictMode, useMemo, useState } from 'react';
-import { createRoot } from 'react-dom/client';
+import { useMemo, useState } from 'react';
 
-const App = () => {
+const Home = () => {
   const [weight, setWeight] = useState(60);
   const [height, setHeight] = useState(170);
-
   const calcBMI = useMemo(() => {
     const heightMeters = height * 0.01;
-
     return Math.round(weight / (heightMeters * heightMeters));
   }, [weight, height]);
 
   const [delay, setDelay] = useState(1000);
-
   const [value, debouncedValue, setValue] = useDebouncedState('', delay);
 
   return (
     <div>
-      <h1>hello world</h1>
+      <h1>hello next.js</h1>
 
       <hr />
 
@@ -62,15 +57,4 @@ const App = () => {
     </div>
   );
 };
-
-applyResetStyle();
-
-applyGlobalStyle();
-
-const root = createRoot(document.getElementById('app') as HTMLElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+export default Home;
