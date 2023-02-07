@@ -1,4 +1,4 @@
-import '@learn-storybook2/core/styles/app.scss';
+import '@learn-monorepo-yarn/core/styles/app.scss';
 import { type AppProps } from 'next/app';
 
 const App = ({ Component, pageProps }: AppProps) => (

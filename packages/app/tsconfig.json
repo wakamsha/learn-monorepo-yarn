@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@learn-storybook2/core/*": ["../core/src/*"]
+      "@learn-monorepo-yarn/core/*": ["../core/src/*"]
     },
     "plugins": [
       {

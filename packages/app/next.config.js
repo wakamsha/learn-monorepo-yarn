@@ -5,7 +5,7 @@ const nextConfig = {
   env: {
     port: 3000,
   },
-  transpilePackages: ['@learn-storybook2/core'],
+  transpilePackages: ['@learn-monorepo-yarn/core'],
   pageExtensions: ['page.tsx'],
   // eslint-disable-next-line @typescript-eslint/require-await
   rewrites: async () => [

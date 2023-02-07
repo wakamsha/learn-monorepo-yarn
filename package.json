@@ -1,5 +1,5 @@
 {
-  "name": "learn-storybook2",
+  "name": "learn-monorepo-yarn",
   "version": "1.0.0",
   "author": "wakamsha <wakamsha@gmail.com>",
   "license": "UNLICENSED",
@@ -14,9 +14,9 @@
     "packages/*"
   ],
   "scripts": {
-    "app": "    yarn workspace @learn-storybook2/app",
-    "core": "   yarn workspace @learn-storybook2/core",
-    "catalog": "yarn workspace @learn-storybook2/catalog"
+    "app": "    yarn workspace @learn-monorepo-yarn/app",
+    "catalog": "yarn workspace @learn-monorepo-yarn/catalog",
+    "core": "   yarn workspace @learn-monorepo-yarn/core"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.50.0",

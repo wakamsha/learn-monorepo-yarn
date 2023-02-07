@@ -1,1 +1,1 @@
-# @learn-storybook2/core
+# @learn-monorepo-yarn/core

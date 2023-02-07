@@ -1,5 +1,5 @@
 {
-  "name": "@learn-storybook2/core",
+  "name": "@learn-monorepo-yarn/core",
   "version": "1.0.0",
   "private": true,
   "packageManager": "yarn@3.4.1",

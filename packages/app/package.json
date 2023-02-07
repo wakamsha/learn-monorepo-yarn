@@ -1,5 +1,5 @@
 {
-  "name": "@learn-storybook2/app",
+  "name": "@learn-monorepo-yarn/app",
   "version": "1.0.0",
   "packageManager": "yarn@3.4.1",
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "reset && next build && next export"
   },
   "dependencies": {
-    "@learn-storybook2/core": "1.0.0",
+    "@learn-monorepo-yarn/core": "1.0.0",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"

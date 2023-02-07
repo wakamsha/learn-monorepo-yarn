@@ -1,6 +1,6 @@
-import { FormLabel } from '@learn-storybook2/core/components/inputs/FormLabel';
-import { LabeledSlider } from '@learn-storybook2/core/components/inputs/LabeledSlider';
-import { useDebouncedState } from '@learn-storybook2/core/hooks/useDebouncedState';
+import { FormLabel } from '@learn-monorepo-yarn/core/components/inputs/FormLabel';
+import { LabeledSlider } from '@learn-monorepo-yarn/core/components/inputs/LabeledSlider';
+import { useDebouncedState } from '@learn-monorepo-yarn/core/hooks/useDebouncedState';
 import { useMemo, useState } from 'react';
 
 const Home = () => {

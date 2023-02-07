@@ -8,7 +8,7 @@ module.exports = {
   ],
   ignoreFiles: ['**/node_modules/**'],
   customSyntax: 'postcss-scss',
-  files: ['**/*.scss'],
+  ignoreFiles: ['**/*.ts{,x}'],
   rules: {
     'property-no-vendor-prefix': null,
     'function-no-unknown': null,

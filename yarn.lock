@@ -503,11 +503,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@learn-storybook2/app@workspace:packages/app":
+"@learn-monorepo-yarn/app@workspace:packages/app":
   version: 0.0.0-use.local
-  resolution: "@learn-storybook2/app@workspace:packages/app"
+  resolution: "@learn-monorepo-yarn/app@workspace:packages/app"
   dependencies:
-    "@learn-storybook2/core": 1.0.0
+    "@learn-monorepo-yarn/core": 1.0.0
     "@types/node": 18.11.19
     "@types/react": 18.0.27
     "@types/react-dom": 18.0.10
@@ -517,9 +517,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@learn-storybook2/core@1.0.0, @learn-storybook2/core@workspace:packages/core":
+"@learn-monorepo-yarn/core@1.0.0, @learn-monorepo-yarn/core@workspace:packages/core":
   version: 0.0.0-use.local
-  resolution: "@learn-storybook2/core@workspace:packages/core"
+  resolution: "@learn-monorepo-yarn/core@workspace:packages/core"
   dependencies:
     "@types/react": 18.0.27
     "@types/react-dom": 18.0.10
@@ -3775,9 +3775,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"learn-storybook2@workspace:.":
+"learn-monorepo-yarn@workspace:.":
   version: 0.0.0-use.local
-  resolution: "learn-storybook2@workspace:."
+  resolution: "learn-monorepo-yarn@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": 5.50.0
     "@typescript-eslint/parser": 5.50.0
