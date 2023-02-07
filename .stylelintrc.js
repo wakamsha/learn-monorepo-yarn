@@ -7,7 +7,6 @@ module.exports = {
     'stylelint-config-prettier-scss',
   ],
   ignoreFiles: ['**/node_modules/**'],
-  customSyntax: 'postcss-scss',
   ignoreFiles: ['**/*.ts{,x}'],
   rules: {
     'property-no-vendor-prefix': null,

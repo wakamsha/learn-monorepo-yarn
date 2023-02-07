@@ -1,7 +1,7 @@
 {
   "ignorePaths": ["**/node_modules/**"],
   "words": [
-    "linaria",
+    "typegen",
     "pnpm",
     "stylelint",
     "wakamsha",

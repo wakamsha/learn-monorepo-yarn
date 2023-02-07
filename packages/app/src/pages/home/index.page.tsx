@@ -2,6 +2,7 @@ import { FormLabel } from '@learn-monorepo-yarn/core/components/inputs/FormLabel
 import { LabeledSlider } from '@learn-monorepo-yarn/core/components/inputs/LabeledSlider';
 import { useDebouncedState } from '@learn-monorepo-yarn/core/hooks/useDebouncedState';
 import { useMemo, useState } from 'react';
+import styles from './index.module.scss';
 
 const Home = () => {
   const [weight, setWeight] = useState(60);
@@ -15,7 +16,7 @@ const Home = () => {
   const [value, debouncedValue, setValue] = useDebouncedState('', delay);
 
   return (
-    <div>
+    <div className={styles.base}>
       <h1>hello next.js</h1>
 
       <hr />

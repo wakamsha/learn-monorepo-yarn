@@ -1,6 +1,7 @@
 {
   "name": "learn-monorepo-yarn",
   "version": "1.0.0",
+  "repository": "git@github.com:wakamsha/learn-monorepo-yarn.git",
   "author": "wakamsha <wakamsha@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
@@ -16,7 +17,8 @@
   "scripts": {
     "app": "    yarn workspace @learn-monorepo-yarn/app",
     "catalog": "yarn workspace @learn-monorepo-yarn/catalog",
-    "core": "   yarn workspace @learn-monorepo-yarn/core"
+    "core": "   yarn workspace @learn-monorepo-yarn/core",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.50.0",
