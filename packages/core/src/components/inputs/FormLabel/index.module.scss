@@ -1,0 +1,25 @@
+@use '../../../styles/utils/variables' as *;
+@use '../../../styles/utils/functions' as f;
+@use '../../../styles/utils/mixins' as m;
+
+.base {
+  display: flex;
+  flex-direction: column;
+  gap: f.gutter(2);
+}
+
+.label-text {
+  display: inline-flex;
+  gap: f.gutter(1);
+  align-items: center;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: $font-size-small;
+  color: $color-text-sub;
+
+  > svg {
+    fill: $font-size-neutral;
+    @include m.square($icon-size-regular);
+  }
+}

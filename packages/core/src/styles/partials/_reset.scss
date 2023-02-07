@@ -1,0 +1,47 @@
+@use '../utils/variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizespeed;
+  line-height: $line-height-neutral;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+
+  &:focus:not(:focus-visible) {
+    /* キーボード操作"以外"でフォーカスされた際は outline を消す */
+    outline: 0;
+  }
+}
+
+main {
+  display: block;
+  overflow-x: hidden;
+}

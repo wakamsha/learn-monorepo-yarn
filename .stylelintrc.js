@@ -3,10 +3,12 @@ module.exports = {
     'stylelint-config-prettier',
     'stylelint-config-recess-order',
     'stylelint-config-recommended',
-    '@linaria/stylelint',
+    'stylelint-config-standard-scss',
+    'stylelint-config-prettier-scss',
   ],
   ignoreFiles: ['**/node_modules/**'],
-  customSyntax: '@stylelint/postcss-css-in-js',
+  customSyntax: 'postcss-scss',
+  files: ['**/*.scss'],
   rules: {
     'property-no-vendor-prefix': null,
     'function-no-unknown': null,
@@ -16,5 +18,6 @@ module.exports = {
         ignorePseudoClasses: ['global'],
       },
     ],
+    'at-rule-no-unknown': [true, { ignoreAtRules: ['use', 'include', 'mixin', 'function', 'return', 'extend'] }],
   },
 };

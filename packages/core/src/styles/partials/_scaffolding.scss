@@ -1,0 +1,48 @@
+@use '../utils/variables' as *;
+
+html {
+  font-size: 100%;
+  background-color: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  color: $color-text-neutral;
+  background-color: #f7f7f7;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-neutral;
+  font-weight: 400;
+  font-feature-settings: palt 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color $duration-fade;
+}

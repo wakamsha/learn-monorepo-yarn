@@ -1,0 +1,13 @@
+@use './variables' as *;
+@use './functions' as f;
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

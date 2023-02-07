@@ -1,0 +1,5 @@
+$gutter: 8px;
+
+@function gutter($n) {
+  @return $gutter * $n;
+}

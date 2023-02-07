@@ -1,5 +1,5 @@
-import { css } from '@linaria/core';
 import { type ChangeEvent } from 'react';
+// import styles from './index.module.scss';
 
 type Props = {
   label: string;
@@ -17,19 +17,20 @@ export const LabeledSlider = ({ label, unit, min, max, value, onValueChange }: P
 
   return (
     <div>
-      <label className={labelStyle}>
+      <label
+      //  className={styles.base}
+      >
         {label} : <strong>{value}</strong>
         {unit}
       </label>
-      <input type="range" className={inputStyle} min={min} max={max} value={value} onChange={handleChange} />
+      <input
+        type="range"
+        // className={styles.input}
+        min={min}
+        max={max}
+        value={value}
+        onChange={handleChange}
+      />
     </div>
   );
 };
-
-const labelStyle = css`
-  display: block;
-`;
-
-const inputStyle = css`
-  width: 100%;
-`;

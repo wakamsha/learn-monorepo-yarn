@@ -1,15 +1,20 @@
 {
   "name": "@learn-storybook2/core",
   "version": "1.0.0",
+  "private": true,
   "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "typegen:scss": "typed-scss-modules src"
+  },
   "dependencies": {
-    "@linaria/core": "4.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "ts-xor": "1.0.8"
+    "sass": "1.58.0",
+    "ts-xor": "1.0.8",
+    "typed-scss-modules": "7.0.2"
   }
 }

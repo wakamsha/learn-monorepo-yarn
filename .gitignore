@@ -76,3 +76,6 @@ dist/
 .envrc
 .stylelintcache
 Stories.ts
+
+# typed-scss-modules
+*.scss.d.ts

@@ -15,11 +15,10 @@
   ],
   "scripts": {
     "app": "    yarn workspace @learn-storybook2/app",
+    "core": "   yarn workspace @learn-storybook2/core",
     "catalog": "yarn workspace @learn-storybook2/catalog"
   },
   "devDependencies": {
-    "@linaria/stylelint": "3.0.0-beta.23",
-    "@stylelint/postcss-css-in-js": "0.38.0",
     "@typescript-eslint/eslint-plugin": "5.50.0",
     "@typescript-eslint/parser": "5.50.0",
     "cspell": "6.21.0",
@@ -33,21 +32,25 @@
     "husky": "8.0.3",
     "lint-staged": "13.1.0",
     "npm-run-all": "4.1.5",
-    "postcss": "8.4.21",
-    "postcss-syntax": "0.36.2",
     "prettier": "2.8.3",
     "prettier-plugin-organize-imports": "3.2.2",
     "stylelint": "14.16.1",
     "stylelint-config-prettier": "9.0.4",
+    "stylelint-config-prettier-scss": "0.0.1",
     "stylelint-config-recess-order": "3.1.0",
     "stylelint-config-recommended": "9.0.0",
+    "stylelint-config-standard-scss": "6.1.0",
     "typescript": "4.9.5"
   },
   "lint-staged": {
     "packages/**/*.ts{,x}": [
       "cspell",
       "prettier -c",
-      "eslint -c .eslintrc.js",
+      "eslint -c .eslintrc.js"
+    ],
+    "packages/**/src/**/*.scss": [
+      "cspell",
+      "prettier -c",
       "stylelint --cache"
     ]
   }
