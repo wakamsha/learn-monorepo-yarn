@@ -38,13 +38,14 @@ yarn
 アプリケーションとしてビルド・起動するパッケージは以下の通り:
 
 - `@learn-monorepo-yarn/app`
+- `@learn-monorepo-yarn/catalog`
 
 上記以外は API や共通ライブラリの実装となっており、単独で利用することはありません。
 
 ### Run
 
 ```bash
-yarn (app) start
+yarn (app|catalog) start
 # e.g. yarn app start
 ```
 
@@ -57,10 +58,11 @@ yarn (app) start
 アプリケーションとしてビルドするパッケージは以下の通り:
 
 - `@learn-monorepo-yarn/app`
+- `@learn-monorepo-yarn/catalog`
 
 ### Build
 
 ```bash
-yarn (app) build
+yarn (app|catalog) build
 # e.g. yarn app build
 ```
