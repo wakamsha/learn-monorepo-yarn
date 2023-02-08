@@ -4,13 +4,13 @@
 
 ### 関連モジュールをインストール
 
-Storybook CLI を使ってインストールすることも可能だが、当該プロジェクトでは不要なモジュールも数多くインストールされてしまう。どのみちそれらはアンインストールするため、必要最小限なモジュールだけ[^1]を一つ一つマニュアルでインストールするのが妥当。
-
-[^1]: npm, yarn なら hoisting が働くため、マニュアルでインストールするモジュールの数はそれほど多くはない。
+Storybook CLI を使ってインストールすることも可能だが、当該プロジェクトでは不要なモジュールも数多くインストールされてしまう。どのみちそれらはアンインストールするため、必要最小限なモジュールだけを一つ一つマニュアルでインストールするのが妥当。
 
 ```bash
-yarn add -D @babel/core babel-loader @storybook/addon-{actions,docs,essentials,interactions,links} @storybook/{builder,manager}-webpack5 @storybook/react
+yarn add -D @babel/core babel-loader @storybook/addon-{essentials,interactions,links} @storybook/{builder,manager}-webpack5 @storybook/react
 ```
+
+アドオンは `addon-essentials` が必須なのはもちろん、 `addon-interactions`, `addon-links` も実質デファクトスタンダードなので併せてインストールします。
 
 ### 設定ファイルを作成
 
