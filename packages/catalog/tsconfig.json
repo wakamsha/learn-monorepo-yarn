@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@learn-monorepo-yarn/core/*": ["../core/src/*"]
+    }
+  },
+  "include": ["./.storybook/**/*", "../app/**/*.stories.tsx", "../core/**/*.stories.tsx"],
+  "exclude": ["node_modules"]
+}
