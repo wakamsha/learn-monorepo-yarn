@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "app": "    yarn workspace @learn-monorepo-yarn/app",
+    "app2": "   yarn workspace @learn-monorepo-yarn/app2",
     "catalog": "yarn workspace @learn-monorepo-yarn/catalog",
     "core": "   yarn workspace @learn-monorepo-yarn/core",
     "postinstall": "husky install"

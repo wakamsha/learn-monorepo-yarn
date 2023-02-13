@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "baseUrl": "./",
+    "paths": {
+      "@learn-monorepo-yarn/core/*": ["../core/src/*"]
+    }
+  },
+  "include": ["./src/**/*", "../core/src/*.d.ts", "vite.config.ts"],
+  "exclude": ["node_modules"]
+}

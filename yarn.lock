@@ -2470,11 +2470,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@learn-monorepo-yarn/app2@workspace:packages/app2":
+  version: 0.0.0-use.local
+  resolution: "@learn-monorepo-yarn/app2@workspace:packages/app2"
+  dependencies:
+    "@types/node": 18.13.0
+    "@types/react": 18.0.28
+    "@types/react-dom": 18.0.10
+    "@vitejs/plugin-react": 3.1.0
+    react: 18.2.0
+    react-dom: 18.2.0
+    sass: 1.58.0
+    typed-scss-modules: 7.0.2
+    vite: 4.1.1
+  languageName: unknown
+  linkType: soft
+
 "@learn-monorepo-yarn/app@workspace:packages/app":
   version: 0.0.0-use.local
   resolution: "@learn-monorepo-yarn/app@workspace:packages/app"
   dependencies:
-    "@learn-monorepo-yarn/core": 1.0.0
     "@types/node": 18.11.19
     "@types/react": 18.0.27
     "@types/react-dom": 18.0.10
@@ -2502,7 +2517,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@learn-monorepo-yarn/core@1.0.0, @learn-monorepo-yarn/core@workspace:packages/core":
+"@learn-monorepo-yarn/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@learn-monorepo-yarn/core@workspace:packages/core"
   dependencies:
@@ -4168,7 +4183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:18.13.0":
   version: 18.13.0
   resolution: "@types/node@npm:18.13.0"
   checksum: 4ea10f8802848b01672bce938f678b6774ca2cee0c9774f12275ab064ae07818419c3e2e41d6257ce7ba846d1ea26c63214aa1dfa4166fa3746291752b8c6416
@@ -4255,6 +4270,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 600fdbc39a92ea4a77047db3e12f05f67776a710f5918248c0189a59ac2a38900c9db5a5d2e433a16df528a3ecab1aa114b322cacea573bb1ca2fc0b094c52d1
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.0.28":
+  version: 18.0.28
+  resolution: "@types/react@npm:18.0.28"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: e752df961105e5127652460504785897ca6e77259e0da8f233f694f9e8f451cde7fa0709d4456ade0ff600c8ce909cfe29f9b08b9c247fa9b734e126ec53edd7
   languageName: node
   linkType: hard
 

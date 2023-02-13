@@ -67,6 +67,23 @@ export const parameters = {
 
 上記は Storybook CLI で自動生成されるコードと同じ。ひとまずこれで OK。
 
+#### `tsconfig.json`
+
+各サブパッケージ配下のコードに記述されている path alias を Storybook に認識させるために `tsconfig.json` の `compilerOptions` を設定します。
+既に `.storybook/main.js` に同様の記述をしていますが、 `tsconfig.json` も必要です。
+
+```json
+{
+  ...
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@learn-monorepo-yarn/core/*": ["../core/src/*"]
+    }
+  }
+}
+```
+
 ## CSS Modules ( Sass ) に対応させる
 
 Storybook はデフォルトでは CSS Modules および Sass を認識しないため、これに対応させる必要があります。
