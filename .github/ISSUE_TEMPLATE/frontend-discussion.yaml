@@ -1,0 +1,68 @@
+name: Frontend Discussion
+
+description: Use this template when you want to discuss with the Frontend Forward Group.
+
+labels: ['help wanted']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this template when creating a new issue to discuss frontend development.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## A discussion about frontend development
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary / 概要
+      description: |
+        Please briefly summarize of what you'd like to discuss.
+        話し合いたい内容を簡潔に記述してください。
+      placeholder: I'd like to solve the problem of keyboard operations not working.
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background / 背景
+      description: |
+        Please describe any prerequisite knowledge or background information.
+        前提となる知識や背景情報を記載してください。
+      placeholder: |
+        ComboBox コンポーネントはテキスト入力とリストボックスを組み合わせたコンポーネントであり、ユーザーが入力したテキストに基づいてリストボックス内のアイテムをフィルタリングすることができます。
+        このコンポーネントは、react-aria というライブラリを使用して実装されています。
+        The ComboBox is a component that combines text-input and list-box, and allows users to filter items in the list-box based on the text they enter. This component is implemented using a library called react-aria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details / 詳細情報
+      description: |
+        Please describe the details of what you'd like to discuss.
+        相談したいことの詳細を記載してください。
+      placeholder: |
+        I can use the arrow keys to select items in a ListBox, but pressing Enter key doesn't select them.
+        リストボックス内のアイテムを選択するために四方向キーを使用することはできるのですが、Enter キーを押しても選択されません。
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References / 参考文献
+      description: |
+        Please describe any related documents or reference URLs.
+        関連するドキュメントや参考 URL などがあれば記載してください。
+
+  - type: textarea
+    id: others
+    attributes:
+      label: Others / その他
+      description: |
+        Please describe anything else you'd like to discuss.
+        その他、相談したいことがあれば記載してください。
